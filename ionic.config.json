@@ -1,0 +1,7 @@
+{
+  "name": "CartLife",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
