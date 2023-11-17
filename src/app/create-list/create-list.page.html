@@ -1,0 +1,43 @@
+<!-- create-list.page.html -->
+
+<ion-header [translucent]="true">
+  <!-- Bouton pour retourner à l'accueil -->
+  <ion-buttons slot='start'> 
+      <ion-button (click)="goToHome()">
+        <ion-icon name="arrow-back" ></ion-icon>
+      </ion-button>
+  </ion-buttons>
+  <ion-toolbar>
+    
+    <ion-title>Create List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Bouton pour ajouter un élément à la liste -->
+  <ion-button side="start" (click)="addItem()">Ajouter un élément</ion-button>
+
+  <!-- Liste des éléments -->
+  <ion-list>
+    <ion-item *ngFor="let item of shoppingList">
+      <!-- Champs pour le nom et la quantité de l'élément -->
+      <ion-label>Nom de l'élément</ion-label>
+      <ion-input [(ngModel)]="item.name" placeholder="Entrez le nom"></ion-input>
+      <ion-label>Quantité</ion-label>
+      <ion-select [(ngModel)]="item.quantity" placeholder="Choisissez la quantité">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <!-- Ajoutez autant d'options que nécessaire -->
+      </ion-select>
+
+      <!-- Bouton pour supprimer l'élément -->
+      <ion-button fill="clear" (click)="removeItem(item)">Supprimer</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <!-- Bouton pour soumettre la liste -->
+  <ion-button side="end" (click)="submitList()">Soumettre la liste</ion-button>
+
+  
+  
+</ion-content>

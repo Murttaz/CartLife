@@ -1,20 +1,21 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-menu-button slot="start"></ion-menu-button>
     <ion-title>
-      Blank
+      Cart Life
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<!-- Page d'accueil avec card pour l'image et la navigation-->
+<ion-card>
+  <!--Chemin relatif de l'image de la card-->
+  <img src="\assets\images\caddie.jpeg">
+  <!-- Partie qui apparait à l'écran, en dessous de l'image-->
+  <ion-card-header>
+    <ion-card-title>Accueil</ion-card-title>
+    <ion-card-subtitle>Pour vous faciliter la vie en faisant les courses</ion-card-subtitle>
+  </ion-card-header>
+    <ion-card-content>Vous pouvez ici créer votre liste de courses et la partager avec vos contacts</ion-card-content>
+</ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>

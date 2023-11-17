@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <!-- Bouton pour retourner à l'accueil -->
+  <ion-buttons slot='start'> 
+    <ion-button (click)="goToHome()">
+      <ion-icon name="arrow-back" ></ion-icon>
+    </ion-button>
+</ion-buttons>
+  <ion-toolbar>
+    <ion-title>shopping</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">shopping</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<!-- shopping.page.html -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Faire les courses
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Afficher la liste d'achats avec des cases à cocher -->
+  <ion-list *ngFor="let item of shoppingList; let i = index">
+    <ion-item>
+      <ion-label>{{ item.name }} - {{ item.quantity }}</ion-label>
+      <ion-checkbox [(ngModel)]="itemsChecked[i]" (ionChange)="onCheckboxChange(i)"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <!-- Boutons pour retourner à la page d'accueil et finir la liste -->
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="goToHome()">Retour</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="finishShopping()">Finir</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
