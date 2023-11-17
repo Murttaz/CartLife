@@ -58,6 +58,7 @@ async finishShopping() {
   }
 }
 
+
 // Fonction pour afficher une alerte avec les éléments oubliés
 async presentAlert() {
   const alert = await this.alertController.create({
