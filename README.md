@@ -36,6 +36,7 @@ En bas 2 page il y aura deux boutons:
                 shopping pour traiter les demandes qui y sont renseignées.
                 une fois le bouton cliqué, cela envoie une notification
                 aux utilisateurs pour dire qu'une liste a été mise à disposition.
+                 (attention risque de demande de permissions de notifications).
 
 
 Faire les courses
