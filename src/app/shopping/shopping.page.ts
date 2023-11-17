@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonCardContent,IonButtons,IonButton,IonIcon, IonContent,IonList,IonLabel,IonItem,IonRow,IonCol} from '@ionic/angular/standalone';
 import { Haptics } from '@capacitor/haptics';
 import { AlertController,NavController } from '@ionic/angular';
 import { Item, ShoppingListService } from '../services/shopping-list.service';
@@ -14,7 +14,7 @@ import { arrowBack } from 'ionicons/icons';
   templateUrl: './shopping.page.html',
   styleUrls: ['./shopping.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]
+  imports: [IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonButtons,IonButton,IonIcon,IonCardContent, IonContent,IonList,IonLabel,IonItem,IonRow,IonCol, CommonModule, FormsModule]
 })
 export class ShoppingPage implements OnInit {
   shoppingList: Item[]|undefined = [];

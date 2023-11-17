@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonCardContent } from '@ionic/angular/standalone';
 
 
 
@@ -9,7 +9,7 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule],
+  imports: [IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonCardContent],
 })
 export class HomePage {
   constructor() {

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonCardContent,IonMenu,IonContent,IonLabel,IonIcon,IonMenuToggle,IonList,IonRouterOutlet } from '@ionic/angular/standalone';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { addIcons } from 'ionicons';
@@ -10,7 +10,7 @@ import { NavController } from '@ionic/angular';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   standalone: true,
-  imports: [IonicModule,RouterLink,CommonModule],
+  imports: [IonHeader,IonToolbar,IonMenuButton,IonTitle,IonCard,IonCardHeader,IonCardTitle,IonCardSubtitle,IonCardContent,IonMenu,IonContent,IonLabel,IonIcon,IonMenuToggle,IonList,IonRouterOutlet ,RouterLink,CommonModule],
 })
 export class AppComponent {
   constructor(private navCtrl:NavController) {
